@@ -1,9 +1,2 @@
 #!/bin/bash
-#include<stdio.h>
-/*
-* Header file created
-*/
-int main(void)
-{
-return 0;
-}
+gcc -E $CFILE
