@@ -2,21 +2,22 @@
 #include <time.h>
 #include <stdio.h>
 /**
- *main -Entry to the code
- *body
- *Return: 0 (Succes) 
- */
+*main -Entry to the code
+*body
+*Return: 0 (Succes) 
+*/
+
 int main(void)
 {
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-if (n == 0)
-printf("%d is zero\n", n);
 if (n > 0)
-printf("%d is positive", n);
+printf("%lu is positive \n", n);
+if (n < 0)
+printf("%lu is negative \n", n);
 else
-printf("%d is negative", n);
+printf("%lu is zero \n", n);
 
 return (0);
 }
