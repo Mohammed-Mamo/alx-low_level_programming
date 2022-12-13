@@ -1,6 +1,5 @@
 #include "main.h"
 /**
- *
  * _abs chech main
  * r: An integre input
  *Description: This function returns absolute value of a number
