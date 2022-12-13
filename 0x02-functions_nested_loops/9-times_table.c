@@ -1,15 +1,15 @@
 #include "main.h"
 /**
-*
-* times_table - Check description
+* this function out puts numbers in a table
+* times_table - Check main function
 * Description: It prints 9 times table starting with 0
-*
 * Return: Nothing.
 */
 
 void times_table(void)
 {
 	int i, j, n;
+
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
