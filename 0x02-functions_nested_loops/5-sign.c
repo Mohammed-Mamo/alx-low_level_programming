@@ -7,7 +7,7 @@
  */
 int print_sign(int n)
 {
-	char neg, pos , zr;
+	char neg, pos ;
 	neg = '-';
 	pos = '+';
 
