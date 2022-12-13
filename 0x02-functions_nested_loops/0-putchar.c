@@ -7,9 +7,7 @@
 
 int main(void)
 {
-	char mystring[8] = "_putchar";
-	fputs("%s\n", mystring);
-	
+fputs("_putchar\n", stdout);	
 	return (0);
 }
 
