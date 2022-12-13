@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
-* Description : this function out puts numbers in a table
-* times_table - It prints 9 times table starting with 0
-* No input is required
+*  times_tabe - check in main
+*  no argumement for this function
+*  Description : It prints 9 times table starting with 0
 * Return: Nothing.
 */
 void times_table(void)
