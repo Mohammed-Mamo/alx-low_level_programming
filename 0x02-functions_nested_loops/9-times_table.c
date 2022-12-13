@@ -4,9 +4,12 @@
 *  times_tabe - check in main
 *  no argumement for this function
 *  Description : It prints 9 times table starting with 0
-* Return: Nothing.
+* noinput parameter
+* Return: Notihing.
 */
+
 void times_table(void)
+
 {
 	int i, j, n;
 
