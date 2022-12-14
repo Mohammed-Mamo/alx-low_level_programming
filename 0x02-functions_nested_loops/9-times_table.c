@@ -1,12 +1,11 @@
 #include "main.h"
 
 /**
- * times_tabe - check main
- * no argumement for this function
- * Return: Notihing is returned
- * print out 10 row by 10 columns
- */
-
+* times_tabe - check main
+* Return: Notihing is returned
+* print out 10 row by 10 columns
+* no argument is required.
+*/
 void times_table(void)
 {
 	int i, j, n;
