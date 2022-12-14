@@ -1,12 +1,11 @@
 #include "main.h"
-
 /**
- * Description: function that prints sign of a number n
- * This function prints sign of a number
- * print_sign(int n) - check main
- * @n: is an input to the function
- * Return: values 1 if +ve, -1 if -ve or 0
- */
+* Description : function that prints sign of a number n
+* print_sign - it is a function
+* @n: is integer input
+* it prints out the sign of a number
+* Return: values 1 if +ve, -1 if -ve or 0
+*/
 
 int print_sign(int n)
 {
