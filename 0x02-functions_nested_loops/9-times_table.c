@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
-* times_tabe - check main
+* times_table - check main function
+* it is a function without input
 * Return: Notihing is returned
 * print out 10 row by 10 columns
 * no argument is required.
