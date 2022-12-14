@@ -1,15 +1,13 @@
 #include "main.h"
 
 /**
-*  times_tabe - check in main
-*  no argumement for this function
-*  Description : It prints 9 times table starting with 0
-* noinput parameter
-* Return: Notihing.
-*/
+ * times_tabe - check main
+ * no argumement for this function
+ * Return: Notihing is returned
+ * print out 10 row by 10 columns
+ */
 
 void times_table(void)
-
 {
 	int i, j, n;
 
