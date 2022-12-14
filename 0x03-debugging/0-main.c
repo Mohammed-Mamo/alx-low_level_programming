@@ -4,15 +4,14 @@
  * main - check main
  * no argument
  * call another function called 
- * return
+ * return: 0 is returned
  * 
  */
 int main(void)
 {
 	int i;
-	
-	printf("please enter an integer\n");
-	scanf("%d:", i);
+
+	i=0;
 	positive_or_negative(i);
 	return (0);
 }
