@@ -2,13 +2,15 @@
 /**
  * main - display fibonacci number less than 98
  * it return 0
- *return: 0 always succes
+ * Description: prints the first 50 Fibonacci numbers
+ * Return: 0 always succes
  */
 int main(void)
 {
 	int i;
 
 	long int fibonacci[50];
+
 	fibonacci[0] = 1;
 	fibonacci[1] = 2;
 	printf("%ld, %ld, ", fibonacci[0], fibonacci[1]);
