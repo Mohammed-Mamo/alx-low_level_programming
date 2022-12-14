@@ -5,6 +5,7 @@
 * @n: is integer input
 * it prints out the sign of a number
 * Return: values 1 if +ve, -1 if -ve or 0
+* greater than 0 lesshan zero equals 0
 * print the sign as + , - or 0.
 */
 
