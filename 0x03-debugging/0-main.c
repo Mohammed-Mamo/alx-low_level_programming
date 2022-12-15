@@ -1,12 +1,13 @@
-#include <sdtio.h>
+#include <stdio.h>
 #include "main.h"
+
 /**
  * main - check main
  * no argument
- * call another function called 
- * return: 0 is returned
- * 
+ * call another function called
+ * return: 0 is returned 
  */
+
 int main(void)
 {
 	int i;
