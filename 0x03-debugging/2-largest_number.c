@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * checks the largest of three integers
  * largest_number - is a function
@@ -7,6 +8,7 @@
  * @c: is third integer
  * return: a largest number
  */
+
 int largest_number(int a, int b, int c)
 {
 	int largest;
