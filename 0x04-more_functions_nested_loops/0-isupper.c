@@ -9,8 +9,9 @@ int _isupper(int c)
 {
 	int upper = 0;
 	
-	if (c >= 65 && c <= 90)
+	if (c >= 'A' && c <= 'Z')
+	{
 		upper = 1;
-	
+	}
 	return (upper);
 }
