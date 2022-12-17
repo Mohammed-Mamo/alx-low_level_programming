@@ -1,19 +1,21 @@
 #include "main.h"
-
 /**
- * print_most_numbers - skip printing 2 and 4
- * no imput
+ * print_most_numbers - check main
+ * no input skip 4 and 2
  * Return: void
+ *
  */
-
 void print_most_numbers(void)
 {
-	int j = '0';
-	
-	for (;j < '10'; j++)
+	int i = '0';
+
+	while (i < '10')
 	{
-		if (j != '2' || j != '4')
-		_putchar(j);
+		if (i != '2' && i != '4')
+			_putchar(i);
+		i++;
 	}
-	_putchar('\n');
+	_putchar('\n);
 }
+
+
