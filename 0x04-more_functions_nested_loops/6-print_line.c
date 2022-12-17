@@ -8,7 +8,8 @@
 
 void print_line(int n)
 {
-	for (int k = 1;k <= n;k++)
+	int k = 0;
+	for (; k < n; k++)
 		_putchar('_');
 	
 	_putchar('\n');
