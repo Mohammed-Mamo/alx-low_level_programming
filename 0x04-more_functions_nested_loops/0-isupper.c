@@ -17,6 +17,7 @@ int _isupper(int c)
 			isupper = 1;
 			break;
 		}
+		u++;
 	}
 return (isupper);
 }
