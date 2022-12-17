@@ -7,9 +7,16 @@
  */
 int _isdigit(int c)
 {
-	if (c <= 57 && c >= 48)
-	
-		return (1);
-	else
-		return (0);
+	char d = '0';
+	int isdigit = 0;
+	while (d < '9')
+	{
+		if (d == c)
+		{
+			isdigit = 1;
+			break;
+		}
+		d++;
+	}
+	return (isdigit);
 }
