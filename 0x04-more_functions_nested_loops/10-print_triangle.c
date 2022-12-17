@@ -6,7 +6,7 @@
  * Return: no
  */
 
- void print_triangle(int size)
+void print_triangle(int size)
 {
 	int i = 0, j, n = size - 1;
 
@@ -15,7 +15,7 @@
 	while (i < size)
 	{
 	i++;
-	for (j = 0;j < size; j++)
+	for (j = 0 ; j < size ; j++)
 	{
 	if (j < n)
 	_putchar(' ');
@@ -29,4 +29,3 @@
 	else
 		_putchar('\n');
 }
-	
