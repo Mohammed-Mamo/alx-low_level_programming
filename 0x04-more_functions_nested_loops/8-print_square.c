@@ -2,16 +2,18 @@
 
 /**
  * print_square - display #
- * Return:
+ * @size: is height of the square
+ *
+ * Return: nothing
  */
 
 void print_square(int size)
 {
-	int r = n , i = 0;
+	int r , i = 0;
 
 	for (; i < size ;i++) 
 	{
-		for (; r > 1; r--)
+		for (r = 0; r < size; r++)
 		_putchar('#');
 		_putchar('\n');
 	}
