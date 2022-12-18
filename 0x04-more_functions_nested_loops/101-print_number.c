@@ -9,7 +9,7 @@
 
 void print_integer(int m)
 {
-	int i = 1000000000;
+	int i = 1000000;
 	int div;
 
 	while (i >= 1)
@@ -37,5 +37,4 @@ void print_number(int n)
 	}
 	else
 		print_integer(n);
-	_putchar('\n');
 }
