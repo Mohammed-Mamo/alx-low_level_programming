@@ -9,7 +9,7 @@
 
 void print_integer(int m)
 {
-	int i = 10000000000;
+	int i = 1000000000;
 	int div;
 
 	while (i >= 1)
