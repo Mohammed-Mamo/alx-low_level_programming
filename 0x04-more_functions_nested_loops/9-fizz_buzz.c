@@ -14,12 +14,13 @@ int main(void)
 	{
 		if (k % 3 == 0 && k % 5 == 0)
 			printf("FizzBuzz ");
-		else if (i % 3 == 0)
+		else if (k % 3 == 0)
 			printf("Fizz ");
-		else if (i % 5 == 0)
+		else if (k % 5 == 0)
 			printf("Buzz ");
 		else
 			printf("%d ", i);
+		k++;
 	}
 	printf("Buzz\n");
 	return (0);
