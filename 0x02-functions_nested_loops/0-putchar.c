@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -9,9 +10,7 @@
 int main(void)
 {
 	int j = 0;
-	char word[8];
-
-	word[] = "_putchar";
+	char word[8] = "_putchar";
 	while (j < 8)
 	{
 		_putchar(word[j]);
