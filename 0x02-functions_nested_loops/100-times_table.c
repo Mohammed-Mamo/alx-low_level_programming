@@ -1,41 +1,56 @@
 #include "main.h"
 
 /**
- * print_times_table - check main
- * @n: is a positive integer less than 15
- * Return : value 0
- * nxn multiplication table
+ * format - function display form
+ * @n: is numbers to be displayed
+ * Return: void
+ *
+ */
+void format(int n)
+{
+	if (n <= 9)
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(n + '0');
+	}
+	else if (n > 9 && n <= 99)
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+		_putchar(n / 10 + '0');
+		_putchar(n % 10 + '0');
+	}
+
+	else
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(n / 100 + '0');
+		_putchar(n % 100 + '0');
+	}
+}
+/**
+ * print_times_table - check function
+ * @n: is size of table
+ * Return: void
+ *
  */
 void print_times_table(int n)
 {
-	int i = 0 , j = 0 , k = 0;
+	int i, j;
 
-	if ( n < 15 && n > 0)
+	if (n > 0 && n < 15)
 	{
 		for (i = 0; i <= n; i++)
 		{
-			for (j = 0; j <= n; j++)
-			{
-				k = i * j;
-
-				if (j == n)
-					continue;
-				if ((k / 10 == 0) && (j != 0))
-				{
-					_putchar(' ');
-					_putchar(k);
-				}
-				else
-				{
-					_putchar(k / 10);
-					_putchar(k % 10);
-					_putchar(',');
-					_putchar(' ');
-				}
-			}
+			_putchar('0');
+			for (j = 1; j <= n; j++)
+				format(i * j);
 			_putchar('\n');
 		}
 	}
-	else
-		_putchar('\n');
 }
