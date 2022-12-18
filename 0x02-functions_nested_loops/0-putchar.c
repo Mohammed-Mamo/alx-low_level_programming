@@ -10,12 +10,16 @@
 int main(void)
 {
 	int j = 0;
+
 	char word[8] = "_putchar";
+
 	while (j < 8)
 	{
 		_putchar(word[j]);
 		j++;
 	}
+	
 	_putchar('\n');
+	
 	return (0);
 }
