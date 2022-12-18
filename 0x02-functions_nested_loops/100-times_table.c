@@ -23,12 +23,12 @@ void print_times_table(int n)
 				if ((k / 10 == 0) && (j != 0))
 				{
 					_putchar(' ');
-					_putchar(k + '0');
+					_putchar(k);
 				}
 				else
 				{
-					_putchar((k / 10) + '0');
-					_putchar((k % 10) + '0');
+					_putchar(k / 10);
+					_putchar(k % 10);
 					_putchar(',');
 					_putchar(' ');
 				}
