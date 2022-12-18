@@ -22,7 +22,7 @@ void print_integer(int m)
 }
 /**
  * print_number - prints multi character decimal
- * @n: is input 
+ * @n: is input
  * Return: nothing
  */
 
@@ -37,4 +37,5 @@ void print_number(int n)
 	}
 	else
 		print_integer(n);
+	_putchar('\n');
 }
