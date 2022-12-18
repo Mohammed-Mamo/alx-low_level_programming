@@ -12,14 +12,13 @@ void print_integer(int m)
 {
 	int i = 1000000000;
 	int div;
+
 	while (i >= 1)
 	{
 		div = m / i;
 		if (div != 0)
-		{
 			_putchar(div % 10 + '0');
-		}
-		i /= 10;
+		i = i / 10;
 	}
 }
 /**
