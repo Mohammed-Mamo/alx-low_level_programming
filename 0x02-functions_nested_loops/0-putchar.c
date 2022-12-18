@@ -1,17 +1,22 @@
 #include "main.h"
+
 /**
- *
- * main - check 
-* return - 0
-*/
+ * main - check main
+ * no input required
+ * Return: 0 succes
+ */
+
 int main(void)
 {
+	int j = 0;
+	char word[8];
 
-int t;
-char n[8] = {'_' , 'p' , 'u','t','c','h','a','r'};
-
-	for (t = 0; t < 8; t++)
-		_putchar(n[t]);
+	word[] = "_putchar";
+	while (j < 8)
+	{
+		_putchar(word[j]);
+		j++;
+	}
 	_putchar('\n');
 	return (0);
 }
