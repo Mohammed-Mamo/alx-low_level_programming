@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * checks the largest of three integers
- * largest_number - is a function
- * @a: is an input integer1
- * @b: is second integer
- * @c: is third integer
- * return: a largest number
- */
+* largest_number - is a function
+* @a: is an input integer1
+* @b: is second integer
+* @c: is third integer
+* Return: a largest number
+*/
 
 int largest_number(int a, int b, int c)
 {
