@@ -1,14 +1,13 @@
 #include "main.h"
 #include <stdio.h>
 
-/** 
+/**
 * print_integer - A function to priting n
 * @m: an input unsigned integer
 * Return: Nothing
 */
 
 void print_integer(int m)
-
 {
 	int i = 1000000000;
 	int div;
@@ -26,8 +25,8 @@ void print_integer(int m)
  * @n: is input 
  * Return: nothing
  */
-void print_number(int n)
 
+void print_number(int n)
 {
 	if (n == 0)
 		_putchar('0');
