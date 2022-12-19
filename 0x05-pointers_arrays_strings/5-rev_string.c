@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * rev_string - function that swaps string
- * @*s: is an input 
+ * @s: is an input 
  *
  * return: nothing
  */
@@ -13,10 +13,10 @@ void rev_string(char *s)
 	
 	while (i < len)
 	{
-temp = s[i];
-s[i] = s[len];
-s[len] = temp;
-i += 1;
-len -= 1;
+		temp = s[i];
+		s[i] = s[len];
+		s[len] = temp;
+		i++;
+		len--;
 	}
 }

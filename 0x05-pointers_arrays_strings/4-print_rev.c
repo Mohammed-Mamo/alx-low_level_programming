@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_rev - is function to print in reverse order
- * @*s: is apointer to string
+ * @s: is apointer to string
  *
  * Return: void
  */
