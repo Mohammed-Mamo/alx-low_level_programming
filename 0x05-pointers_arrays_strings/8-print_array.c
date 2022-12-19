@@ -3,17 +3,18 @@
 
 /**
  * print_array - is function
- * @*a: pointer, 
- * @n: is size 
+ * @a: pointer
+ * @n: is size
  * Return:void
  */
 void print_array(int *a, int n)
 {
-	int k =0;
+	int i = 0;
 
-	while (i <= n-1)
+	while (i < n)
 	{
 		printf("%d " , a[i]);
+		i += i;
 		if (i < n-1)
 			printf(",");
 	}
