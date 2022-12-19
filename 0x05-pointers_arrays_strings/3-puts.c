@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _puts - is a function
- * @*str: is pointer of strings
+ * @str: is pointer of strings
  *
  * Return: void
  */
