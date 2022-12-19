@@ -1,6 +1,7 @@
 #include "main.h"
 /**
- * reset_to_98 - updates value pointed by pointer 
+ * reset_to_98 - updates value
+ * pointed by pointer
  * @n:is apointer
  *
  * Return: void
