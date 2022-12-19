@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <time.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -10,5 +10,6 @@
 int main(void)
 {
 	char *psswd;
-	return (0);
+	*psswd = rand(void);
+	return (psswd);
 }
