@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * puts2 - a function
- * @*str: is an input
+ * @str: is an input
  *
  * Return: nothing
  */
