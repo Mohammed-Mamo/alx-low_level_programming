@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * rev_string - function that swaps string
- * @s: is an input 
+ * @s: is an input
  *
  * return: nothing
  */
