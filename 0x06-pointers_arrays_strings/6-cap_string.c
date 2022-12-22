@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
 * cap_string - function
 * @ltr: upper case text
@@ -9,8 +8,9 @@
 
 char *cap_string(char *ltr)
 {
-	int i = 0 , j;
-	char Separators[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}' };
+	int i = 0, j;
+
+	char Separators[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
 	while (ltr[i])
 	{
