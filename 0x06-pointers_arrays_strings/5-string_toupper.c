@@ -1,16 +1,20 @@
 #include "main.h"
 /**
  * string_toupper - function
- * @*: pointer
+ * @t: pointer
  *
  * Return: upper
  */
 
 char *string_toupper(char *t)
 {
-char lower = *t;
+	int i =0;
 
-char upper = lower + 32;
-return (upper)
+	while (t[i])
+	{
+		if (t[i] >= 'a' && t[i] <= 'z')
+			t[i] -= 32;
+		i++;
+	}
+	return (t);
 }
-
