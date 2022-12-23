@@ -7,3 +7,4 @@ int check_separators(char c);
 char *rot13(char *);
 char *_strncpy(char *dest, char *src, int n);
 char *cap_string(char *);
+char *rot13(char *r);
