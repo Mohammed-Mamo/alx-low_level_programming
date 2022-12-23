@@ -1,42 +1,52 @@
-int separators(char c);
+int check_separators(char c);
 /**
-* cap_string - function
-* @ltr: upper case text
-*
-* Return: capitalized
-*/
-
-char *cap_string(char *small)
+ * cap_string - function
+ * @s: input pointer
+ * Return: a characte
+ */
+char *cap_string(char *)
 {
 	int i = 0;
-	
-	while (small[i])
-	{
-		if (i == 0 && (small[i] >= 'a' && small[i] <= 'z'))
-			small[i] -= 32;
-	if (separators(small[i]) && ( small[i + 1] >= 'a' && small[i + 1] <= 'z'))
-		small[i + 1] -= 32;
+
+	while (s[i]){if (i == 0 && (s[i] >= 'a' && s[i] <= 'z'))
+
+		s[i] -= 32;
+
+		if (check_seperators(s[i]) && (s[i + 1] >= 'a' && s[i + 1] <= 'z'))
+
+			s[i + 1] -= 32;
+
 		i++;
+
 	}
-	return (small);
+
+	return (s);
+
 }
 
 /**
- * separator - check for separators like new line, tab, 
+ * check_separators - function
  * @c: input
- * Return: 1 succes ,0 fail
+ * Return: 1 if true 0 else
  *
  */
-int separators(char c)
-{
-char sep[13] = {' ', '\t', '\n', ',', '.', '!', '?', ';', '"', '(', ')', '{', '{'};
-int j = 0, k = 0;
+int check_seperators(char c)
 
-for (; j < 13; j++)
 {
-if (sep[j] == c)
-	k = 1;
-}
-return (k);
-}
 
+	int i = 0;
+
+	char seperators[13] = { ' ', '\t', '\n', ',', ';', '.', '!', '?','"', '(', ')', '{', '}' };
+
+	for (; i < 13; i++)
+
+	{
+
+		if (c == seperators[i])
+
+			return (1);
+
+	}
+
+	return (0);
+}
