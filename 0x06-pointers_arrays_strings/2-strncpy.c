@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strncpy - function
  * @dest: destination
@@ -24,7 +25,7 @@ char *_strncpy(char *dest, char *src, int n)
 		n = j;
 
 	src = aux2;
-	for (;i < n; i++)
+	for (; i < n; i++)
 		*dest++ = *src++;
 	dest = aux2;
 	return (dest);
