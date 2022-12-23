@@ -34,7 +34,7 @@ int separator(char c)
 	char Separators[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
 	for (j = 0; j < 13; j++)
-		if (c == Separators[j])
+		if (cii == Separators[j])
 			return (1);
 	return (0);
 }

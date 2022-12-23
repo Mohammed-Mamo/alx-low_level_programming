@@ -15,7 +15,9 @@ char *leet(char *x)
 		for (j = 0; j < 10; j++)
 			if (x[i] == str[j])
 				x[i] = NUM[j];
+
 		i++;
 	}
+
 	return (x);
 }
