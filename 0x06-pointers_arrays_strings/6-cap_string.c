@@ -1,4 +1,3 @@
-#include "main.h"
 int separators(char c);
 /**
 * cap_string - function
@@ -15,15 +14,15 @@ char *cap_string(char *small)
 	{
 		if (i == 0 && (small[i] >= 'a' && small[i] <= 'z'))
 			small[i] -= 32;
-	if (separators[small[i]] && ( small[i + 1] >= 'a' && small[i + 1] <= 'z'))
+	if (separators(small[i]) && ( small[i + 1] >= 'a' && small[i + 1] <= 'z'))
 		small[i + 1] -= 32;
 		i++;
 	}
 	return (small);
 }
-#include "main.h"
+
 /**
- * separator - check main
+ * separator - check for separators like new line, tab, 
  * @c: input
  * Return: 1 succes ,0 fail
  *
