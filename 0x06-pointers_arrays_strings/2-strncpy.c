@@ -27,6 +27,5 @@ char *_strncpy(char *dest, char *src, int n)
 	src = aux2;
 	for (; i < n; i++)
 		*dest++ = *src++;
-	dest = aux2;
-	return (dest);
+	return (aux1);
 }
