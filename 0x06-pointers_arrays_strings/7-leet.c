@@ -4,6 +4,7 @@
 * @x: input pointer
 *Return: character
 */
+
 char *leet(char *x)
 {
 	int i = 0, j;
@@ -15,9 +16,7 @@ char *leet(char *x)
 		for (j = 0; j < 10; j++)
 			if (x[i] == str[j])
 				x[i] = NUM[j];
-
 		i++;
 	}
-
 	return (x);
 }
