@@ -2,29 +2,20 @@
 /**
  * _strncpy - function
  * @dest: destination
- * @src: source 
+ * @src: source
  * @n: length
- * return: charca
+ * Return: charca
  */
-
-
 
 char *_strncpy(char *dest, char *src, int n)
 {
-
 	int sl = 0, i = 0;
 	char *a = dest, *b = src;
 
 	while (*src)
 	{
-		sl++;
-		src++;
+		for (; i < n; i++)
+		dest[i++] = *src++;
 	}
-	sl++;
-	if (n > sl)
-		n = sl;
-	src = b;
-	for (; i < n; i++)
-		*dest++ = *src++;
 	return (a);
 }
