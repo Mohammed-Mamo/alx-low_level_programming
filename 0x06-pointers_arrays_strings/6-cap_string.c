@@ -1,5 +1,5 @@
 #include "main.h"
-int separator(char c);
+int separators(char c);
 /**
 * cap_string - function
 * @ltr: upper case text
@@ -7,19 +7,19 @@ int separator(char c);
 * Return: capitalized
 */
 
-char *cap_string(char *ltr)
+char *cap_string(char *small)
 {
 	int i = 0;
-
-	while (ltr[i])
+	
+	while (small[i])
 	{
-		if (i == 0 && (ltr[i] >= 'a' && ltr[i] <= 'z'))
-			ltr[i] -= 32;
-		if (separator[ltr] && (ltr[i + 1] >= 'a' && ltr[i + 1] <= 'z'))
-				ltr[i + 1] -= 32;
+		if (i == 0 && (small[i] >= 'a' && small[i] <= 'z'))
+			small[i] -= 32;
+	if (separators[small[i]] && ( small[i + 1] >= 'a' && small[i + 1] <= 'z'))
+		small[i + 1] -= 32;
 		i++;
 	}
-	return (ltr);
+	return (small);
 }
 #include "main.h"
 /**
@@ -28,13 +28,16 @@ char *cap_string(char *ltr)
  * Return: 1 succes ,0 fail
  *
  */
-int separator(char c)
+int separators(char c)
 {
-	int j;
-	char Separators[13] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+char sep[13] = {' ', '\t', '\n', ',', '.', '!', '?', ';', '"', '(', ')', '{', '{'};
+int j = 0, k = 0;
 
-	for (j = 0; j < 13; j++)
-		if (cii == Separators[j])
-			return (1);
-	return (0);
+for (; j < 13; j++)
+{
+if (sep[j] == c)
+	k = 1;
 }
+return (k);
+}
+
