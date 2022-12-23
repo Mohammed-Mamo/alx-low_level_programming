@@ -1,19 +1,18 @@
 #include "main.h"
 /**
- * _strcat
- *//
-
-
+ * _strcat - is function
+ * @dest: destination pointer
+ * @src: source to be copied
+ *
+ * Return: a pointer
+ */
 char *_strcat(char *dest, char *src)
 {
-	char *TEMPO;
-	TEMPO = dest;
-	int i = 0;
+	char *aux = dest;
 
-	while(dest[i] != '\0')
+	while(*dest)
 		dest++;
-
 	while (*src)
 		*dest++ = *src++;
-return (TEMPO);
+return (aux);
 }
