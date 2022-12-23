@@ -18,7 +18,6 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	}
 	i++;
-
 	if (n > i)
 	n = i;
 	src = aux2;
@@ -28,6 +27,5 @@ char *_strncat(char *dest, char *src, int n)
 		*dest++ = *src++;
 		j++;
 	}
-
 	return (aux);
 }
