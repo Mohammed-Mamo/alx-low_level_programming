@@ -10,22 +10,22 @@
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0, j = 0;
-	char *temp = dest, *Source = src;
+	char *aux1 = dest, *aux2 = src;
 
 	while (*src)
 	{
 	src++;
 	j++;
 	}
+	j++;
 
 	if (n > j)
 		n = j;
 
-	src = Source;
+	src = aux2;
 
 	for (; i < n; i++)
 		*dest++ = *src++;
-	
-	*dest = '\0';
-	return (temp);
+
+	return (aux2);
 }
