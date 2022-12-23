@@ -9,19 +9,25 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char *aux = dest;
-	int i = 0;
+	char *aux = dest, *aux2 = src;
+	int i = 0, j = 0;
 
-	while (*dest)
+	while (*src)
 	{
-		dest++;
+		src++;
 		i++;
 	}
 	i++;
 
-	while (n--)
-		*dest++ = *src++;
+	if (n > i)
+	n = i;
+	src = aux2;
 
-	*dest = '\0';
+	while (j < n)
+	{
+		*dest++ = *src++;
+		j++;
+	}
+
 	return (aux);
 }
