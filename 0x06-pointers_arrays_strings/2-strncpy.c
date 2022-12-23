@@ -18,14 +18,12 @@ char *_strncpy(char *dest, char *src, int n)
 		src++;
 		j++;
 	}
-
 	j++;
-
 	if (n > j)
 		n = j;
-
 	src = aux2;
 	for (; i < n; i++)
 		*dest++ = *src++;
+	*dest = '\0';
 	return (aux1);
 }
