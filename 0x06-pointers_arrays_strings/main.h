@@ -4,4 +4,5 @@ int _strcmp(char *s1, char *s2);
 void reverse_array(int *a, int n);
 char *string_toupper(char *);
 char *cap_string(char *small);
-int separators(char c)
+int check_separators(char c);
+char *rot13(char *);
