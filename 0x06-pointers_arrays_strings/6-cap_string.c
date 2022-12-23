@@ -1,3 +1,4 @@
+#include "main.h"
 int check_separators(char c);
 /**
  * cap_string - function
