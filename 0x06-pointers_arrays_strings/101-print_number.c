@@ -7,14 +7,15 @@
  */
 void print_number(int n)
 {
-	int j = n;
+	int x = n, j = n;
 	int i = 1;
-	int max = 1000000000;
+
 
 	if (n < 0)
 	{
 		_putchar('-');
 		j *= -1;
+		x = j;
 	}
 
 	if (j < 10 && j >= 0)
@@ -22,11 +23,17 @@ void print_number(int n)
 
 else if (j > 10)
 {
-	while (j /10 > 0)
+	while (j /10)
 	{
-	_putchar(j / i);
-	j /= 10;
+		j /= 10;
+		i *=10;
 	}
+for (; i > 1; i /=10)
+{
+	_putchar(x / i);
+x /= i * 10;
+}
+}
 	_putchar(j);
 }
 _putchar('\n');
