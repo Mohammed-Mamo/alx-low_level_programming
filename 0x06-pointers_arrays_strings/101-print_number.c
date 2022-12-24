@@ -15,14 +15,22 @@ if (j < 0)
 _putchar('-');
 j *= -1;
 }
-while (j / 10 >= 10)
+if (n == 0)
+	_putchar('0');
+	else
+{
+	while (j / 10 >= 10)
 {
 	j /= 10;
 	i *= 10;
 }
+
 i *= 10;
+
 for (; n / i > 0; i /= 10)
 _putchar(n / i);
+
+}
 
 _putchar('\n');
 }
