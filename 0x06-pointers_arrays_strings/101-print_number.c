@@ -9,9 +9,8 @@ int countdigit(int num);
  */
 void print_number(int n)
 {
-	int x = n;
+	int x;
 	int j = n;
-	int i = 1;
 
 	if (n < 0)
 	{
@@ -19,13 +18,17 @@ void print_number(int n)
 		j *= -1;
 		x = j;
 	}
+
 	if ( j == 0)
 		_putchar('0');
+
 	else if (j <= 9)
 		_putchar(j);
-	else if (j > 9 )
+
+	else
 	{
 		x = countdigit(j);
+
 		while ( j / x >= 1)
 		{
 			_putchar((j / x) + '0');
@@ -34,7 +37,6 @@ void print_number(int n)
 		}
 	}
 }
-
 /**
  * countdigit - counts number of digit
  * @num: number to be tested
@@ -44,13 +46,13 @@ void print_number(int n)
 
 int countdigit(int num)
 {
-	int i = 10;
-	int j = num;
+	int y = 10;
+	int z = num;
 
-	while (j /10 >= 1)
+	while (z /10 >= 1)
 	{
-		j /= 10;
-		i *=10;
+		z /= 10;
+		y *=10;
 	}
-	return (i);
+	return (y);
 }

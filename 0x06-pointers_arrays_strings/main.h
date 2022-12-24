@@ -10,3 +10,4 @@ char *cap_string(char *);
 char *rot13(char *r);
 void print_number(int n);
 int _putchar(char a);
+int countdigit(int);
