@@ -4,7 +4,6 @@
 * @x: input pointer
 *Return: character
 */
-
 char *leet(char *x)
 {
 	int i = 0, j;
