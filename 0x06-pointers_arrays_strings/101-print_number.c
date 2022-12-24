@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_number: function
+ * print_number - function
  * @n: integer
  * Return: void
  *
@@ -9,7 +9,8 @@ void print_number(int n)
 {
 	int j = n;
 	int i = 1;
-if(j < 0)
+
+if (j < 0)
 {
 _putchar('-');
 j *= -1;
