@@ -1,4 +1,6 @@
 #include "main.h"
+int countdigit(int num);
+
 /**
  * print_number - function
  * @n: integer
@@ -17,22 +19,38 @@ void print_number(int n)
 		j *= -1;
 		x = j;
 	}
-	if (j <= '9' && j >= '0')
+	if ( j == 0)
+		_putchar('0');
+	else if (j <= 9)
 		_putchar(j);
-	else if (j > '9')
+	else if (j > 9 )
 	{
-		while (j /10)
+		x = countdigit(j);
+		while ( j / x >= 1)
 		{
-			j /= 10;
-			i *=10;
+			_putchar((j / x) + '0');
+			j %= x;
+			x /= 10;
 		}
-
-		for (; i > 1; i /=10)
-		{
-			_putchar((x / i));
-			x = x / (i * 10);
-		}
-		_putchar(j);
 	}
-	_putchar('\n');
+}
+
+/**
+ * countdigit - counts number of digit
+ * @num: number to be tested
+ * Return: return no of digit
+ *
+ */
+
+int countdigit(int num)
+{
+	int i = 10;
+	int j = num;
+
+	while (j /10 >= 1)
+	{
+		j /= 10;
+		i *=10;
+	}
+	return (i);
 }
