@@ -17,9 +17,9 @@ void print_number(int n)
 		j *= -1;
 		x = j;
 	}
-	if (j < 10 && j >= 0)
+	if (j <= '9' && j >= '0')
 		_putchar(j);
-	else if (j > 10)
+	else if (j > '9')
 	{
 		while (j /10)
 		{
