@@ -9,28 +9,25 @@ void print_number(int n)
 {
 	int j = n;
 	int i = 1;
+	int max = 1000000000;
 
-if (j < 0)
+	if (n < 0)
+	{
+		_putchar('-');
+		j *= -1;
+	}
+
+	if (j < 10 && j >= 0)
+		_putchar(j);
+
+else if (j > 10)
 {
-_putchar('-');
-j *= -1;
-}
-if (n == 0)
-	_putchar('0');
-	else
-{
-	while (j / 10 >= 10)
-{
+	while (j /10 > 0)
+	{
+	_putchar(j / i);
 	j /= 10;
-	i *= 10;
+	}
+	_putchar(j);
 }
-
-i *= 10;
-
-for (; n / i > 0; i /= 10)
-_putchar(n / i);
-
-}
-
 _putchar('\n');
 }
