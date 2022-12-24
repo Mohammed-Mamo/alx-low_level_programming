@@ -6,20 +6,21 @@
  * Return: character
  */
 
-char *rot13(char *r)
+char *rot13(char *s)
 {
 	int i = 0;
 
 	while (r[i] != '\0')
 	{
-	       while  ((r[i] >= 'a' && r[i] <= 'z') || (r[i] >= 'A' && r[i] <= 'Z'))
+		while ((s[i] >= 'a' && s[i] <= 'z') || (s[i] >= 'A' && s[i] <= 'Z'))
 		{
-			if (r[i] >= 'a' && r[i] <= 'm' || r[i] >= 'A' && r[i] <= 'M')
-				r[i] += 13;
-				r[i] -= 13;
+			if ((s[i] >= 'a' && s[i] <= 'm') || (s[i] >= 'A' && s[i] <= 'M'))
+				s[i] += 13;
+			else
+				s[i] -= 13;
 			i++;
 		}
-	       i++;
+		i++;
 	}
-return (r);
+	return (s);
 }
