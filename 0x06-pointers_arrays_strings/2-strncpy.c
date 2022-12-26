@@ -10,24 +10,18 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-	int i = 0, j = 0;
-	char *aux1 = dest, *aux2 = src;
+	int j = 0;
 
-	while (*src)
+	while (j < n &&  src[j] != '\0')
 	{
-		src++;
+		dest[j] = src[j];
 		j++;
 	}
 
-	j++;
-
-	if (n > j)
-		n = j;
-
-	src = aux2;
-
-	for (; i < n; i++)
-		*dest++ = *src++;
-
-	return (aux1);
+	while (j <  n)
+	{
+		dest[j] = '\0';
+		j++;
+	}
+	return (dest);
 }
