@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * rot13 - encodes rotated character
- * @r: input character
+ * @s: input character
  * Return: character
  */
 
