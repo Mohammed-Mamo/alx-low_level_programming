@@ -8,18 +8,24 @@
 
 void print_number(int n)
 {
-	int j = n;
+	int j = 1000000000;
 
 	if (n < 0)
 	{
 		_putchar('-');
-		j = -n;
+		n * = -1;
 	}
-
-	while (j / 10 != 0)
+	if (n == 0)
+		_putchar('0');
+	else
 	{
-		_putchar((j / 10));
+	while (n / j == 0)
+		j /= 10;
+	while (j >=1)
+	{
+		_putchar((n /j) + '0');
+		n %= j;
 		j /= 10;
 	}
-	_putchar((j % 10) + '0');
+	}
 }
