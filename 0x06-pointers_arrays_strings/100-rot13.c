@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * rot13 - encodes rotated character
  * @r: input character
@@ -16,7 +16,7 @@ while (s[i] != '\0')
 {
 for (j = 0; j < 52; j++)
 {
-if (s[i] = array1[j]
+if (s[i] = array1[j])
 {
 s[i] = array2[j];
 break;
