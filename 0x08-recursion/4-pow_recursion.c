@@ -1,6 +1,7 @@
 #include "main.h"
+
 /**
- * _pow_recursion -
+ * _pow_recursion - find x multiplied y times
  * @x: the base
  * @y: the exponent
  * Return: The result of x to the power of y
