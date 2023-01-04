@@ -14,7 +14,8 @@ int is_divisible(int N, int D)
 	return (is_divisible(N, D + 1));
 }
 /**
- * is_prime - is function
+ * is_prime_number - is function return
+ * true if prime or false otherwise
  * @n: number tobe tested
  * Return: 0 if wrong, 1 if true
  */
