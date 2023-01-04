@@ -1,8 +1,9 @@
 #include "main.h"
+
 /**
  * is_prime_number - check divisiblity 2
- * @n: numerator
- * Return: 0 if false 1 other wise
+ * @n: number to be checked
+ * Return: 0 if even false 1 other wise
  */
 int is_prime_number(int n)
 {
