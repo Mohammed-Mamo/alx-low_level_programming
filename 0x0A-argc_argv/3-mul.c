@@ -7,11 +7,11 @@
  * @argv: vector to store
  * Return: 0 succes 1 error
  */
-int main(int argc, char *argv)
+int main(int argc, char **argv)
 {
 	int num1, num2, product;
 
-	if (argc !> 3)
+	if (argc != 3)
 	{
 		printf("%s Error\n");
 		return (1);
@@ -21,8 +21,7 @@ int main(int argc, char *argv)
 		num1 = atoi(argv[1]);
 		num2 = atoi(argv[2]);
 		product = num1 * num2;
-
-	printf("%d\n", product);
-	return (0);
+		printf("%d\n", product);
+		return (0);
 	}
 }
