@@ -7,13 +7,13 @@
  * @argv: vector to store
  * Return: 0 succes 1 error
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	int num1, num2, product;
 
 	if (argc != 3)
 	{
-		printf("%s Error\n");
+		printf("%sError\n");
 		return (1);
 	}
 	else
