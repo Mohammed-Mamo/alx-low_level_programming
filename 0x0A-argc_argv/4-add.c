@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 /**
- * add - function
+ * main - function
  * @argc: counter
  * @argv: vector
  * Return: 0 succes 1 other
  */
 int main(int argc, char **argv)
 {
-	int num, sum = 0,i;
+	int num, sum = 0, i;
 
 	while (argc-- > 1)
 	{
