@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 
-/** 
- * main  - is function
+/**
+ * main - is function
  * @argc: should be two
  * @argv: vector to store
  * Return: 0 succes 1 error
