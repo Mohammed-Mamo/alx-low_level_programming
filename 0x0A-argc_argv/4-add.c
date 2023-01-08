@@ -8,6 +8,7 @@
  * @argv: vector
  * Return: 0 succes 1 other
  */
+
 int main(int argc, char **argv)
 {
 	int num, sum = 0, i;
@@ -16,7 +17,7 @@ int main(int argc, char **argv)
 	{
 		for (i = 0; argv[argc][i]; i++)
 		{
-			if(!(isdigit(argv[argc][i])))
+			if (!(isdigit(argv[argc][i])))
 			{
 				printf("Error\n");
 				return (1);
