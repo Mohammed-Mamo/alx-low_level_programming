@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
+/**
+ * main - function
+ * @argc: counter
+ * @argv: vector
+ * Return: integer
+ */
 int main(int argc, char **argv)
 {
 	int amount, coins = 0;
