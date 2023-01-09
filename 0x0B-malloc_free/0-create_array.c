@@ -6,20 +6,15 @@
  * @c: character to be stored
  * Return: a pointer to the array, or NULL if it fails
  */
-
 char *create_array(unsigned int size, char c)
 {
 	unsigned int i = 0;
 	char *l;
 
 	l = malloc(size * sizeof(char));
-
 	if (l == NULL || size == 0)
 		return (NULL);
-	while (i < size)
-		{
-			l[i] = c;
-			i++;
-		}
-	return (l);
+	while (i++ < size)
+		l[i] = c;
+		return (l);
 }
