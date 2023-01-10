@@ -15,12 +15,18 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	nwptr = (int **)malloc((width * height) * sizeof(int *));
+	nwptr = (int **)malloc(height * sizeof(int *));
 	if (nwptr == NULL)
 		return (NULL);
-	for (i = 0; i < width; i++)
+	for (j = 0; j < height; j++)
 	{
-		for (j = 0; j < height; j++)
+		nwptr[i] = (int *)malloc(sizeof(int) * width);
+		if (nwptr[i] == NULL)
+			return (NULL);
+	}
+	for (i = 0; i < height i++)
+	{
+		for (j = 0; j < width; j++)
 		{
 			nwptr[i][j] = 0;
 		}
