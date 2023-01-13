@@ -1,29 +1,24 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
 /**
- * array_range - function
- * @min: minimum integer
- * @max: maximum integer
- * Return: pointer on succes
- * Null otherwise
- */
+* array_range - function
+* @min: minimum integer
+* @max: maximum integer
+* Return: pointer on succes
+*/
 
 int *array_range(int min, int max)
 {
-	int i, j, *iptr;
+	int i;
+	int *iptr;
 
-	j = max - min + 1;
 	if (max <= min)
 		return (NULL);
-
-	iptr = malloc(j);
+	iptr = malloc((max - min + 1));
 	if (iptr == NULL)
 		return (NULL);
-
-	for (i = 0; i < j; i++)
-		iptr[i] = min + i;
-
+	for (i = 0; i < (max - min); i++)
+		*(iptr + i) = min + i;
 	return (iptr);
 }
