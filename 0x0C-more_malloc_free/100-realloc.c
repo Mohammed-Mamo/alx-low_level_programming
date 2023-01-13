@@ -1,10 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- *
- *
- *
- */
+ * _realloc - check main
+ * @ptr: old pointer
+ * @old_size: prev size
+ * @new_size: new size
+ * Return: void
+ */ 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	char *nlocation, *nptr;
