@@ -1,27 +1,24 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
- * _calloc - is function 
+ * _calloc - is function
  * @nmemb: argument1
  * @size: argument2
  * Return: void
  */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i, j;
+	unsigned int i;
 	void *ptr;
 
-	if (nmeb = 0 || size = 0)
+	if (nmemb == 0 || size == 0)
 		return (NULL);
-
-	ptr = malloc(nmemb * size);
+	ptr = malloc((nmemb * size));
 	if (ptr == NULL)
 		return (NULL);
-
-	j = nmemb * size;
-
-	for (i = 0; i < j; i++)
+	for (i = 0; i < (nmemb * size); i++)
 		*(ptr + i) = 0;
-
 	return (ptr);
 }
