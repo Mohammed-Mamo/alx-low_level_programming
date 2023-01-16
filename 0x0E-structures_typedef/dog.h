@@ -1,6 +1,6 @@
 #include <stdlib.h>
 /**
- * dog - is object dog
+ * struct dog - is object dog
  * @name: name of the dog
  * @owner: owner name
  * @age: age of the dog
