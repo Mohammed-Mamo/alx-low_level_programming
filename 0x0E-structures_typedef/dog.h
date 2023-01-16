@@ -1,3 +1,4 @@
+#include <stdlib.h>
 /**
  * struct dog - is object dog
  * @name: name of the dog
