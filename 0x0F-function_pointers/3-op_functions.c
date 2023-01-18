@@ -1,30 +1,64 @@
-#include <stdlib.h>
 #include "3-calc.h"
-
+#include <stdlib.h>
+#include <stdio.h>
 /**
- * get_op_func -  the function that selects the correct fun
- * @s: an input character
- *
- * Return: a pointer
+ * op_add - perform addition
+ * @a: integer1,
+ * @b: integetr2
+ * Return: a+b
+ */
+int op_add(int a, int b)
+{
+	return (a + b);
+}
+/**
+ * op_mul - multiply two integers
+ * @a: integer
+ * @b: integer2
+ * Return: a*b
+ */
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+/**
+ * op_sub - subtract
+ * @a: input1
+ * @b: integer2
+ * Return: a -b
  */
 
-int (*get_op_func(char *s))(int, int)
+int op_sub(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i = 0;
-
-	while (i < 5)
+	return (a - b);
+}
+/**
+ * op_div - division
+ * @a: integer1
+ * @b: integer2
+ * Return: a/b if b not zero
+ */
+int op_div(int a, int b)
+{
+	if ( b == 0)
 	{
-		if (*(ops[i]).op == *s && *(s + 1) == '\0')
-			return (ops[i].f);
-		i++;
+		printf("Error\n");
+		return (98);
 	}
-	return (NULL);
+	return (a / b);
+}
+/**
+ * op_mod - is remeinder division
+ * @a: integer1
+ * @b: integer2
+ * Return: return a%b, if b not equal zero
+ */
+int op_mod(int a, int b)
+{
+	if (b == 0)
+	{
+		printf("Error\n");
+		return (99);
+	}
+	return (a % b);
 }
