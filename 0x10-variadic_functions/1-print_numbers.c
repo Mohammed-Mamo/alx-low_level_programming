@@ -3,7 +3,7 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
- * print_numbers - is function 
+ * print_numbers - is function
  * @separator: is separating character between numbers
  * @n: is total number to be printed
  * Return: nothing
@@ -12,11 +12,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	unsigned int j = 0;
 	va_list ap;
-	va_start(ap, n);
 
+	va_start(ap, n);
 	for (; j < n; j++)
 	{
-		printf("%d", va_arg(ap, n));
+		printf("%d", va_arg(ap, int));
 		if (separator == NULL)
 			continue;
 		if (j < n - 1)
