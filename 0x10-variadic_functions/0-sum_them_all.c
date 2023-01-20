@@ -6,7 +6,7 @@
  * sum_them_all -s function
  * to add all arguments
  * @n: number of arguments
- *
+ * @...: is other parameteres
  * Return:the sum
  */
 int sum_them_all(const unsigned int n, ...)
@@ -18,9 +18,10 @@ int sum_them_all(const unsigned int n, ...)
 	if (n == 0)
 		return (0);
 	va_start(ap, n);
+
 	for (; i < n; i++)
 		sum += va_arg(ap, int);
-	printf("\n");
+
 	va_end(ap);
 	return (sum);
 }
