@@ -1,6 +1,7 @@
-#include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+#include "variadic_functions.h"
+
 /**
  * sum_them_all -s function to add all arguments
  * @n: number of arguments
@@ -17,13 +18,10 @@ int sum_them_all(const unsigned int n, ...)
 		return (0);
 
 	va_start(ap, n);
-	while (i < n)
-	{
-		SUM += va_arg(ap, int);
-		i++;
-	}
-
+	for (; i < n; i++)
+		SUM = SUM + va_arg(ap, int);
 	va_end(ap);
+
 	printf("\n");
 	return (SUM);
 }
