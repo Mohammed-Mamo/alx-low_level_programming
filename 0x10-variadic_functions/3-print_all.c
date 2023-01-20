@@ -2,10 +2,12 @@
 #include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
+
 /**
  * print_all - is a function
  * @format: data type
  * @...: remaining parameters
+ * @*: is pointer
  * Return: nothing
  */
 void print_all(const char * const format, ...)
@@ -20,7 +22,6 @@ void print_all(const char * const format, ...)
 		printf("\n");
 		return;
 	}
-
 	while (format[i])
 	{
 		switch (format[i])
@@ -32,7 +33,7 @@ void print_all(const char * const format, ...)
 				printf("%d", va_arg(ap, int));
 				break;
 			case 'f':
-				printf("%f", (float) va_arg(ap, double));
+				pintf("%f", (float) va_arg(ap, double));
 				break;
 			case 's':
 				temp = va_arg(ap, char*);
