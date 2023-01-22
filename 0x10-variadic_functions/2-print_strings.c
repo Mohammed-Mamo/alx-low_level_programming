@@ -8,17 +8,17 @@
  * @...: others
  * Retun: void
  */
-
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
-	unsigned int j;
+	unsigned int j = 0;
 	char *string;
 
 	va_start(ap, n);
-	for (j = 0; j < n; j++)
+	for (; j < n; j++)
 	{
 		string = va_arg(ap, char*);
+
 		if (string == NULL)
 			printf("(nil)");
 		else
