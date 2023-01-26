@@ -62,4 +62,4 @@ int op_mod(int a, int b)
 		return (100);
 	}
 	return (a % b);
-};
+}
