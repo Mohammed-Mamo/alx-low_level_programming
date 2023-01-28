@@ -1,9 +1,11 @@
 #include <stdio.h>
+
+/* using construcrtor in c*/
 void main_constructor(void) __attribute__((constructor));
 /**
- * Using constructors in C
  * main_constructor - A constructor function that prints a message
  * before main runs
+ *
  * Return: Nothing
  */
 void main_constructor(void)
