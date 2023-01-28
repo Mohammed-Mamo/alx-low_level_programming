@@ -6,7 +6,8 @@
  * @str: pointer to string that adds as node
  * Return: pointer to new head of list, NULL on failure
  */
-list_t *add_node(list_t **head, const char *str)
+
+list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *temp, *new_node;
 	int length = 0; 
