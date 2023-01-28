@@ -2,17 +2,25 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * list_len - A function that gets the number of nodes of linked list
- * @h: head of linked list
- * Return: number of nodes as size_t
+ * add_node -A function that add new node at start
+ * @head: pointer to head of linked list
+ * @str: existing node
+ * Return: new node
  */
-size_t list_len(const list_t *h)
+list_t *add_node(list_t **head, const char *str)
 {
-	unsigned int nd = 0;
-	while (h)
-	{
-		nd++;
-		h = h->next;
-	}
-	return (nd);
+	list_t *new_nd;
+	int length = 0;
+
+	new_nd = malloc(sizeof(list_t));
+	if (new_nd == NULL)
+		return (NULL);
+	while (str[length])
+		length++;
+
+	new_nd->len = length;
+	new_nd->str = strdup(str);
+	new_nd->next = *head;
+	*head = new_nd;
+	return (new_nd);
 }
