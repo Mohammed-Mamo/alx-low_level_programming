@@ -9,9 +9,6 @@
 size_t list_len(const list_t *h)
 {
 	unsigned int nodes = 0;
-	
-	if (h == NULL)
-		return (NULL);
 	while (h)
 	{
 		nodes++;
