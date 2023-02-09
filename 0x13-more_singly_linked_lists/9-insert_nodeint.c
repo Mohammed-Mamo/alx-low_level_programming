@@ -15,9 +15,11 @@ listint_t *new_nd, *tmp;
 
 if (head == NULL)
 return (NULL);
+
 new_nd = malloc(sizeof(listint_t));
 if (new_nd == NULL)
 return (NULL);
+
 if (*head == NULL)
 {
 *head = new_nd;
@@ -32,9 +34,9 @@ new_nd->n = n;
 *head = new_nd;
 return (new_nd);
 }
-tmp = *head;
-while (j <= idx)
+while (j < idx)
 {
+tmp = *head;
 tmp = tmp->next;
 j++;
 }
