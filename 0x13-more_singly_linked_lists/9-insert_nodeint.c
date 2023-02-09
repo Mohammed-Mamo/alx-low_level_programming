@@ -34,9 +34,11 @@ new_nd->n = n;
 *head = new_nd;
 return (new_nd);
 }
-while (j < idx)
+else
 {
 tmp = *head;
+while (j < idx)
+{
 tmp = tmp->next;
 j++;
 }
@@ -44,4 +46,5 @@ new_nd->n = n;
 new_nd->next = tmp->next;
 tmp->next = new_nd;
 return (new_nd);
+}
 }
